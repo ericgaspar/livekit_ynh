@@ -59,6 +59,9 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+    main.default = 7880
+    tcp.default = 7881
+    tcp.exposed = "TCP"
 
     [resources.apt]
     packages = "redis-server"

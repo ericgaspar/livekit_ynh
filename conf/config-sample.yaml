@@ -151,9 +151,9 @@ keys:
   key1: __KEY_1__
   key2: __KEY_2__
 # Logging config
-# logging:
+logging:
 #   # log level, valid values: debug, info, warn, error
-#   level: info
+    level: info
 #   # log level for pion, default error
 #   pion_level: error
 #   # when set to true, emit json fields
