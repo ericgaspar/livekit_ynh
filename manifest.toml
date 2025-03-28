@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "livekit"
-name = "Livekit"
+name = "LiveKit"
 description.en = "Conferencing media server"
 description.fr = "Serveur média de conférence"
 
