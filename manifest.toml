@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "livekit"
 name = "Livekit"
-description.en = "End-to-end stack for WebRTC. SFU media server and SDKs"
-description.fr = "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
+description.en = "Conferencing media server"
+description.fr = "Serveur média de conférence"
 
 version = "1.8.4~ynh1"
 

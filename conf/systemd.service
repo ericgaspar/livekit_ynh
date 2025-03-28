@@ -1,5 +1,5 @@
 [Unit]
-Description=Livekit: 
+Description=Livekit: videoconferencing server
 After=network.target
 
 [Service]
@@ -8,8 +8,8 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__INSTALL_DIR__/livekit-server 
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
+Restart=on-failure
+LimitNOFILE=65536
 
 ### Depending on specificities of your service/app, you may need to tweak these
 ### .. but this should be a good baseline
