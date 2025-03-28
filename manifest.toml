@@ -45,6 +45,7 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
+    in_subdir = false
     url = "https://github.com/livekit/livekit/releases/download/v1.8.4/livekit_1.8.4_linux_amd64.tar.gz"
     sha256 = "b660f4a72fe493e7c2a27861c403fba3d8c8fec4ce5e223515b26850c24d2dae"
 
@@ -53,8 +54,6 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
-
-    [resources.data_dir]
 
     [resources.permissions]
     main.url = "/"
