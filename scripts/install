@@ -16,8 +16,13 @@ source /usr/share/yunohost/helpers
 foo="bar"
 ynh_app_setting_set --key=foo --value=$foo
 
-ynh_app_setting_set --key=php_upload_max_filesize --value=50M
-ynh_app_setting_set --key=php_post_max_size --value=50M
+#=================================================
+# FIND AND OPEN A PORT
+#=================================================
+ynh_script_progression "Configuring firewall..."
+
+# Reserve UDP Port range 49152:65535
+ynh_hide_warnings yunohost firewall allow UDP -4 50000:60000
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -32,7 +37,7 @@ ynh_setup_source --dest_dir="$install_dir"
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
 
-ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
+ynh_config_add --template="config-sample.yaml" --destination="$install_dir/config.yaml"
 
 #=================================================
 # SYSTEM CONFIGURATION
