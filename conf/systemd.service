@@ -1,5 +1,5 @@
 [Unit]
-Description=Livekit: videoconferencing server
+Description=LiveKit: videoconferencing server
 After=network.target
 
 [Service]
