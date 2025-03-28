@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+LiveKit is an open source project that provides scalable, multi-user conferencing based on WebRTC. It's designed to provide everything you need to build real-time video audio data capabilities in your applications.
